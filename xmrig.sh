@@ -9,7 +9,7 @@ mkdir xmrig/build
 cd xmrig/build
 cmake ..
 make -j$(nproc)
-sudo apt autoremove
+sudo apt autoremove -y
 sudo apt install speedtest-cli -y
 cd xmrig/build
 speedtest
