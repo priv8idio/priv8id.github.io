@@ -1,5 +1,5 @@
-sudo apt update 
-sudo apt upgrade
+sudo apt update  -y
+sudo apt upgrade -y
 sudo apt install screen
 sudo apt install unzip
 
@@ -9,3 +9,7 @@ mkdir xmrig/build
 cd xmrig/build
 cmake ..
 make -j$(nproc)
+sudo apt autoremove
+sudo apt install speedtest-cli -y
+speedtest
+lscpu
