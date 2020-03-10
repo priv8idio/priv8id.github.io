@@ -11,5 +11,6 @@ cmake ..
 make -j$(nproc)
 sudo apt autoremove
 sudo apt install speedtest-cli -y
+cd xmrig/build
 speedtest
 lscpu
